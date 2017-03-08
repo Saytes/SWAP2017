@@ -1,0 +1,9 @@
+Ideas para elegir tema para el trabajo
+	-Asegurar Apache, nginx, IIS
+	-Prevención de ataques.
+	-Sistema de detección de intrusos.
+	-Estudio de tipos de ataques. Cómo actúan los piratas informáticos.
+	-Web farm con Apache-linux, nginx, IIS
+	-Microsoft Azure
+	-Amazon EC2
+	-haproxy - heartbeat - nginx
