@@ -84,8 +84,8 @@ Una vez abierto, añadimos lo siguiente:
 		iptables -A INPUT -i lo -j ACCEPT
 		iptables -A OUTPUT -o lo -j ACCEPT
 	# Abrir los para permitir el acceso
-		iptables -A INPUT -i enp0s3 -p tcp -m multiports --dports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
-		iptables -A OUTPUT -o enp0s3 -p tcp -m multiports --sports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+		iptables -A INPUT -i enp0s3 -p tcp -m multiport--dports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+		iptables -A OUTPUT -o enp0s3 -p tcp -m multiport --sports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
 
 Una vez creado el script vamos a programarlo para que se ejecute en cada inicio del sistema, para ello voy a crear un servicio en systemd.
 
